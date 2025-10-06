@@ -1,0 +1,66 @@
+# ===== OS (macOS) =====
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+.Spotlight-V100
+.Trashes
+._*
+
+# ===== Секреты / переменные окружения =====
+.env
+.env.*
+*.env
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+
+# ===== Логи и дампы =====
+*.log
+logs/
+log/
+hs_err_pid*
+replay_pid*
+
+# ===== Java / артефакты сборки =====
+target/
+out/
+bin/
+*.class
+*.war
+*.ear
+# JAR обычно коммитить не надо (если это не релизной артефакт):
+*.jar
+
+# ===== Maven =====
+# Файлы проекта (pom.xml) — коммитим
+# Резервные версии от плагинов лучше не хранить:
+pom.xml.versionsBackup
+release.properties
+
+# ===== Gradle =====
+.gradle/
+build/
+# ВАЖНО: обертку Gradle храним, чтобы проект собирался у всех
+!gradle/wrapper/gradle-wrapper.jar
+!gradlew
+!gradlew.bat
+!gradle/wrapper/gradle-wrapper.properties
+
+# ===== IntelliJ IDEA / JetBrains =====
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ===== VS Code (если пользуешься) =====
+.vscode/
+
+# ===== Тестовые/временные =====
+*.swp
+*.swo
+*.tmp
+.cache/
+.tmp/
